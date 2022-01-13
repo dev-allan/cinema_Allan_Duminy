@@ -1,0 +1,7 @@
+.bodyHome{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    margin: 50px;
+    padding: 20px;
+}

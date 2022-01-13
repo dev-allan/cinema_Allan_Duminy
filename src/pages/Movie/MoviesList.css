@@ -1,0 +1,15 @@
+.listDetailMovie{
+    display: flex;
+    margin : 10px;
+    flex-wrap: wrap;
+}
+
+#btnDelete{
+    margin : 15px;
+}
+
+.bodyMoviesList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

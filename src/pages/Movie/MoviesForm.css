@@ -1,0 +1,10 @@
+.bodyMoviesForm{
+    background-color: rgb(190, 190, 204);
+    display: flex;
+    flex-direction: column;
+    padding:20px
+}
+
+.inputFormMovies{
+    margin: 10px;
+}

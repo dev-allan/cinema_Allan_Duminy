@@ -1,0 +1,11 @@
+.mainNav {
+  background-color: rgb(72, 51, 145);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  padding : 10px
+}
+.linkNav {
+  color: red;
+}
