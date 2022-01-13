@@ -4,9 +4,9 @@
     flex-wrap: wrap;
 }
 
-#btnDelete{
+/* #btnDelete{
     margin : 15px;
-}
+} */
 
 .bodyMoviesList{
     display: flex;

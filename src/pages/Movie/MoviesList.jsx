@@ -24,8 +24,8 @@ export const MoviesList = (props) => {
 
   return (
     <Fragment>
-        <MoviesForm addMovie={handleAddMovie} />
-        <div className="bodyMoviesList">
+      <MoviesForm addMovie={handleAddMovie} />
+      <div className="bodyMoviesList">
         <h3>Les films à l'affiche</h3>
         <div className="listDetailMovie">
           {listMovies.map((movie, index) => {
@@ -36,10 +36,11 @@ export const MoviesList = (props) => {
             );
           })}
         </div>
+
+        <button id="btnDelete" onClick={handleDelete}>
+          Effacer tous les films
+        </button>
       </div>
-      <button id="btnDelete" onClick={handleDelete}>
-        Effacer tous les films
-      </button>
     </Fragment>
   );
 };
