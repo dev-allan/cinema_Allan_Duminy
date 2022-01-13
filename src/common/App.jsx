@@ -1,16 +1,10 @@
 import React, { Fragment } from 'react';
-import Home from '../pages/Home';
-import MoviesDetail from '../pages/MoviesDetail';
-import MoviesForm from '../pages/MoviesForm';
-import MoviesList from '../pages/MoviesList';
+import Routing from './Navigation/Routing';
 
 export const App = () => {
     return (
         <Fragment>
-            <Home/>
-            <MoviesDetail/>
-            <MoviesForm/>
-            <MoviesList/>
+            <Routing/>
         </Fragment>
     );
 };

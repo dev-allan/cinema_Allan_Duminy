@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 
-export const Home = () => {
+export const Page404 = () => {
     return (
         <Fragment>
-            <h1>Bienvenue chez CineNanard !</h1>
+            <h1>ERROR 404</h1>
         </Fragment>
     );
 };
 
-export default Home;
+export default Page404;
