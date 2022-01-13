@@ -1,12 +1,14 @@
 import React, { Fragment } from "react";
+import { getRandomInt } from "../common/helpers";
 
+/**
+ * 
+ * @param {Data afin d'afficher une film random en page d'accueil} props 
+ * @returns une vue affichant un film random
+ */
 export const Home = (props) => {
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
   let intRandom = getRandomInt(props.data.length);
   let data = props.data[intRandom];
-  console.log(data)
   return (
     <Fragment>
       <h1>Bienvenue chez CineNanard !</h1>

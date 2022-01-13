@@ -1,5 +1,10 @@
 import React, { Fragment } from 'react';
 
+/**
+ * 
+ * @param {data} props 
+ * @returns une vue des détails d'un film
+ */
 export const MoviesDetail = (props) => {
     return (
         <Fragment>

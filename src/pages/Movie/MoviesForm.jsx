@@ -1,5 +1,11 @@
 import React, { Fragment, useState } from "react";
+import DB from "./../../DB.json"
 
+/**
+ * 
+ * @param {data} props 
+ * @returns une vue comprenant le formulaire d'ajout de films
+ */
 export const MoviesForm = (props) => {
   const [movie, setMovie] = useState({
     title: "",
@@ -40,6 +46,7 @@ export const MoviesForm = (props) => {
     e.preventDefault();
     e.stopPropagation();
     props.addMovie(movie);
+    DB.push(movie)
   };
 
   return (

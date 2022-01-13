@@ -23,7 +23,7 @@ export const Routing = (props) => {
         <Routes>
           <Route path="/" element={<Navigate to="/accueil" />} />
           <Route path="/accueil" element={<Home data={props.data}/>} />
-          <Route path="/movies" element={<MoviesList/>} />
+          <Route path="/movies" element={<MoviesList data={props.data}/>} />
           <Route path="*" element={<Page404/>} />
         </Routes>
       </Router>

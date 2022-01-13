@@ -1,26 +1,26 @@
 [
   {
-    "title": "film1",
+    "title": "l'avion de l'apocalypse",
     "actors": "actor1",
     "duration": 120,
     "resume": "lorem ipsum"
   },
   {
-    "title": "film2",
+    "title": "The frozen dead",
     "actors": "actor2",
-    "duration": 120,
+    "duration": 150,
     "resume": "lorem ipsum"
   },
   {
-    "title": "film3",
+    "title": "Virus cannibale",
     "actors": "actor3",
-    "duration": 120,
+    "duration": 70,
     "resume": "lorem ipsum"
   },
   {
-    "title": "film4",
+    "title": "Zombi 3",
     "actors": "actor4",
-    "duration": 120,
+    "duration": 100,
     "resume": "lorem ipsum"
   }
 ]

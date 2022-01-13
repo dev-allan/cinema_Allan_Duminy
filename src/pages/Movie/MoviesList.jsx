@@ -2,8 +2,13 @@ import React, { Fragment, useState } from "react";
 import MoviesForm from "./MoviesForm";
 import MoviesDetail from "./MoviesDetail";
 
+/**
+ * 
+ * @param {data} props 
+ * @returns la vue d'une liste de films avec un bouton permettant de tout supprimer à l'affichage
+ */
 export const MoviesList = (props) => {
-  const [listMovies, setListMovies] = useState([]);
+  const [listMovies, setListMovies] = useState(props.data);
 
   const handleAddMovie = (movie) => {
     setListMovies([...listMovies, movie]);
