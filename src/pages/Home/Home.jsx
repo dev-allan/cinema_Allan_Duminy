@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { getRandomInt } from "../common/helpers";
+import { getRandomInt } from "../../common/helpers";
 import "./Home.css";
 
 /**
