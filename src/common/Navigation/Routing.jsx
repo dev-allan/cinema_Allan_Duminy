@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,14 +15,14 @@ let pages = [
     { to: "/movies", nom: "Les films à l'affiche" },
   ];
 
-export const Routing = () => {
+export const Routing = (props) => {
   return (
     <Fragment>
       <Router>
         <NavBar pages={pages} />
         <Routes>
           <Route path="/" element={<Navigate to="/accueil" />} />
-          <Route path="/accueil" element={<Home/>} />
+          <Route path="/accueil" element={<Home data={props.data}/>} />
           <Route path="/movies" element={<MoviesList/>} />
           <Route path="*" element={<Page404/>} />
         </Routes>

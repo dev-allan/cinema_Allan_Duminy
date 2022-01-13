@@ -1,0 +1,26 @@
+[
+  {
+    "title": "film1",
+    "actors": "actor1",
+    "duration": 120,
+    "resume": "lorem ipsum"
+  },
+  {
+    "title": "film2",
+    "actors": "actor2",
+    "duration": 120,
+    "resume": "lorem ipsum"
+  },
+  {
+    "title": "film3",
+    "actors": "actor3",
+    "duration": 120,
+    "resume": "lorem ipsum"
+  },
+  {
+    "title": "film4",
+    "actors": "actor4",
+    "duration": 120,
+    "resume": "lorem ipsum"
+  }
+]
