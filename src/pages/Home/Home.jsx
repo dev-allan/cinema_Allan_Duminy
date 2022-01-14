@@ -9,10 +9,9 @@ import HomeWithJsonServer from "./HomeWithJsonServer";
  * @returns une vue affichant un film random
  */
 export const Home = (props) => {
-
   let intRandom = getRandomInt(props.data.length);
   let data = props.data[intRandom];
-  
+
   return (
     <Fragment>
       <div className="bodyHome">
@@ -27,7 +26,7 @@ export const Home = (props) => {
             <p>Resumé : {data.resume}</p>
           </div>
         </div>
-          <HomeWithJsonServer/>
+        <HomeWithJsonServer />
       </div>
     </Fragment>
   );

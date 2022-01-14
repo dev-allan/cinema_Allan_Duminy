@@ -19,7 +19,7 @@ export const MoviesList = (props) => {
   useEffect(() => {
     let data = getFromServer();
     setDataMoviePromise(data);
-  },[listMovies]);
+  }, [listMovies]);
 
   const recupValuePromise = async () => {
     await dataMoviePromise.then((value) => {
@@ -66,14 +66,15 @@ export const MoviesList = (props) => {
           Effacer tous les films contenus dans le state
         </button>
 
-        <div  className="listDetailMovie">
-        {!isEmpty(dataMovie) && dataMovie.map((movie, index) => {
-            return (
-              <div key={index}>
-                <MoviesDetail movie={movie} />
-              </div>
-            );
-          })}
+        <div className="listDetailMovie">
+          {!isEmpty(dataMovie) &&
+            dataMovie.map((movie, index) => {
+              return (
+                <div key={index}>
+                  <MoviesDetail movie={movie} />
+                </div>
+              );
+            })}
         </div>
       </div>
     </Fragment>

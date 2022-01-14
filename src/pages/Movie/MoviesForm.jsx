@@ -50,7 +50,7 @@ export const MoviesForm = (props) => {
     e.stopPropagation();
     props.addMovie(movie);
     DB.push(movie);
-    postToServer(movie)
+    postToServer(movie);
   };
 
   return (
@@ -92,8 +92,8 @@ export const MoviesForm = (props) => {
                 placeholder="entrer une durée en min"
               />
             </label>
-            </div>
-            <div className="inputFormMovies">
+          </div>
+          <div className="inputFormMovies">
             <label>
               resumer
               <textarea

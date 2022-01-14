@@ -1,9 +1,9 @@
 /**
- * 
- * @param {object a envoyer au serveur} body 
+ *
+ * @param {object a envoyer au serveur} body
  * @returns la réponse du serveur renvoyant les infos envoyés
  */
-export const postToServer = async(body) => {
+export const postToServer = async (body) => {
   let responseData = null;
 
   if ("http://localhost:3000/movies/" != null) {
@@ -34,7 +34,7 @@ export const postToServer = async(body) => {
 };
 
 /**
- * 
+ *
  * @returns une promesse contenu les data
  */
 export async function getFromServer() {

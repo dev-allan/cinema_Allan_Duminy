@@ -8,12 +8,12 @@ import {
 import Home from "../../pages/Home/Home";
 import MoviesList from "../../pages/Movie/MoviesList";
 import Page404 from "../../pages/Page404";
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
 
 let pages = [
-    { to: "/accueil", nom: "Accueil" },
-    { to: "/movies", nom: "Les films à l'affiche" },
-  ];
+  { to: "/accueil", nom: "Accueil" },
+  { to: "/movies", nom: "Les films à l'affiche" },
+];
 
 export const Routing = (props) => {
   return (
@@ -22,9 +22,9 @@ export const Routing = (props) => {
         <NavBar pages={pages} />
         <Routes>
           <Route path="/" element={<Navigate to="/accueil" />} />
-          <Route path="/accueil" element={<Home data={props.data}/>} />
-          <Route path="/movies" element={<MoviesList data={props.data}/>} />
-          <Route path="*" element={<Page404/>} />
+          <Route path="/accueil" element={<Home data={props.data} />} />
+          <Route path="/movies" element={<MoviesList data={props.data} />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </Router>
     </Fragment>
