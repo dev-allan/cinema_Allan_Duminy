@@ -1,7 +1,7 @@
 # Start projet cinema
 ## Available Scripts
 
-Executer les commandes :
+Executer les commandes à la racine du projet :
 
 ### `npm install`
 
