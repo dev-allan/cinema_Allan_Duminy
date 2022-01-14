@@ -4,10 +4,6 @@
     flex-wrap: wrap;
 }
 
-/* #btnDelete{
-    margin : 15px;
-} */
-
 .bodyMoviesList{
     display: flex;
     flex-direction: column;

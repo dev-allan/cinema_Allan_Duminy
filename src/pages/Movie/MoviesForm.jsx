@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { postToServer } from "../../common/TestBackEnd/FetchServer";
 import DB from "./../../DB.json";
 
 import "./MoviesForm.css";
@@ -49,6 +50,7 @@ export const MoviesForm = (props) => {
     e.stopPropagation();
     props.addMovie(movie);
     DB.push(movie);
+    postToServer(movie)
   };
 
   return (

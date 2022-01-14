@@ -1,8 +1,10 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import MoviesForm from "./MoviesForm";
 import MoviesDetail from "./MoviesDetail";
+import { getFromServer } from "../../common/TestBackEnd/FetchServer";
 
 import "./MoviesList.css";
+import { isEmpty } from "../../common/helpers";
 
 /**
  *
@@ -11,6 +13,30 @@ import "./MoviesList.css";
  */
 export const MoviesList = (props) => {
   const [listMovies, setListMovies] = useState(props.data);
+  let [dataMoviePromise, setDataMoviePromise] = useState();
+  let [dataMovie, setDataMovie] = useState();
+
+  useEffect(() => {
+    let data = getFromServer();
+    setDataMoviePromise(data);
+  },[listMovies]);
+
+  const recupValuePromise = async () => {
+    await dataMoviePromise.then((value) => {
+      setDataMovie(value);
+    });
+  };
+
+  useEffect(() => {
+    recupValuePromise();
+  }, [dataMoviePromise]);
+
+  console.log(dataMovie);
+
+  useEffect(() => {
+    let data = getFromServer();
+    setDataMoviePromise(data);
+  }, []);
 
   const handleAddMovie = (movie) => {
     setListMovies([...listMovies, movie]);
@@ -36,10 +62,19 @@ export const MoviesList = (props) => {
             );
           })}
         </div>
-
         <button id="btnDelete" onClick={handleDelete}>
-          Effacer tous les films
+          Effacer tous les films contenus dans le state
         </button>
+
+        <div  className="listDetailMovie">
+        {!isEmpty(dataMovie) && dataMovie.map((movie, index) => {
+            return (
+              <div key={index}>
+                <MoviesDetail movie={movie} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </Fragment>
   );

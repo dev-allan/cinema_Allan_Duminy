@@ -4,7 +4,7 @@ import { getFromServer } from "../../common/TestBackEnd/FetchServer";
 import { isEmpty } from "../../common/helpers";
 
 /**
- *
+ * Afiiche un film aléatoire
  * @returns une vue affichant un film aléatoire contenu dans data.json avec json server
  */
 const HomeWithJsonServer = () => {
@@ -29,7 +29,7 @@ const HomeWithJsonServer = () => {
   return (
     <div>
       {/* Film random en utilisant jsonwebserver */}
-      <h2>Films random en utilisant JSON WEB SERVER</h2>
+      <h2>Film random en utilisant JSON WEB SERVER</h2>
       {!isEmpty(dataMovie) && (
         <div>
           <p>titre : {dataMovie.title}</p>

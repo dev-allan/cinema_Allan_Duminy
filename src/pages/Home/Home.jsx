@@ -19,7 +19,7 @@ export const Home = (props) => {
         <h1>Bienvenue chez CineNanard !</h1>
         <div>
           {/* film random avec les data passé en props */}
-          <h2>Films random avec les datas en dur passés en props</h2>
+          <h2>Film random avec les datas en dur passés en props</h2>
           <div>
             <p>Titre : {data.title}</p>
             <p>Durée : {data.duration}</p>
